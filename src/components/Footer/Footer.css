@@ -1,0 +1,80 @@
+footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    gap: 20px;
+    border-top: 1px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 10px rgb(95, 95, 95), 2px 2px 10px rgb(120, 119, 119);
+    transition: all 0.5s ease-in-out;
+}
+
+.footerLine {
+    height: 2px;
+    width: 30%;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.icons {
+    display: flex;
+    gap: 25px;
+}
+
+.icons a{
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icons .linkedin{
+    font-size: 30px;
+}
+.icons .twitter{
+    font-size: 35px;
+}
+.icons .facebook{
+    font-size: 35px;
+}
+.icons .instagram{
+    font-size: 35px;
+}
+
+.icons .SKY:hover{
+    color: #0866ff;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    /* background-clip: text; */
+    /* color: transparent;  */
+}
+.icons .RED:hover{
+    color: red;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.icons .BLACK:hover{
+    color: black;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 750px){
+    .footerLine {
+        width: 100%;
+    }
+}

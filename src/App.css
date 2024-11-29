@@ -1,0 +1,227 @@
+/* ! ============================================ CSS FOR CARD ============================================ */
+#card{
+    width: 90%;
+   max-width: 360px;
+   height: 180px;
+   /* background-color: rgb(20, 26, 31); */
+   background-color: var(--bg-color);
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   box-shadow: 2px 2px 10px rgb(105, 105, 105), 2px 2px 20px rgb(98, 97, 97);
+   border-radius: 10px;
+   transition: all 0.5s ease-in-out;
+   cursor: pointer;
+   flex-shrink: 0;
+   padding: 10px;
+   overflow: hidden;
+}
+
+#card:hover{
+    box-shadow: 2px 2px 10px rgb(87, 195, 219), 2px 2px 20px rgb(82, 205, 208);
+}
+
+#card h1{
+    font-size: 35px;
+    background: linear-gradient(to right, rgb(235, 239, 28), rgb(24, 239, 8));
+    background-clip: text;
+    color: transparent;
+}   
+
+.hoverCard img{
+    /* width: 95%; */
+    height: 80%;
+    filter: drop-shadow(2px 2px 10px black);
+    
+}
+
+.hoverCard{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(121, 205, 220, 0.486), rgba(30, 28, 28, 0.407));
+    position: absolute;
+    bottom: 0;
+    backdrop-filter: blur(7px);
+    transform: translateY(100%);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card:hover .hoverCard{
+    transform: translateY(0);
+}
+
+/* ! =============================================== CSS FOR SKILLS =================================================== */
+#skills{
+    height: 60vh;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.5s ease-in-out;
+}
+
+#skills h1{
+    font-size: 3vmax;
+    text-align: center;
+    background: linear-gradient(to right, rgb(28, 206, 22), #e1d33a);
+    background-clip: text;
+    color: transparent;
+}
+
+.skill-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 750px) {
+    #skills{
+        height: 100%;
+        width: 100%;
+    }
+    .skill-content{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: none;
+        gap: 10px;
+    }
+}
+
+
+
+/* ! ============================================ CSS FOR SKILLS CARD ============================================ */
+.skill{
+    width: 90%;
+    max-width: 360px;
+    height: 180px;
+    background-color: rgb(20, 26, 31);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 2px 2px 10px black, 2px 2px 20px black;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    flex-shrink: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.skill:hover{
+    box-shadow: 2px 2px 10px rgb(87, 195, 219), 2px 2px 20px rgb(82, 205, 208);
+}
+
+.skill h1{
+    font-size: 35px;
+    background: linear-gradient(to right, rgb(235, 239, 28), rgb(24, 239, 8));
+    background-clip: text;
+    color: transparent;
+}   
+
+.hoverSkill img{
+    /* width: 95%; */
+    height: 80%;
+    filter: drop-shadow(2px 2px 10px black);
+    
+}
+
+.hoverSkill{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(121, 205, 220, 0.486), rgba(30, 28, 28, 0.407));
+    position: absolute;
+    bottom: 0;
+    backdrop-filter: blur(7px);
+    transform: translateY(100%);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill:hover .hoverSkill{
+    transform: translateY(0);
+}
+
+
+
+/* ! ============================================ CSS FOR SKILLS CARD TWO ============================================ */
+.skillCard{
+    width: 100%;
+   max-width: 250px;
+   height: 100px;
+   background-color: #0eefeb;
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   box-shadow: 2px 2px 10px black, 2px 2px 20px black;
+   border-radius: 10px;
+   transition: all 0.5s ease-in-out;
+   cursor: pointer;
+   /* flex-shrink: 2/1; */
+   flex-grow: 0.5;
+   padding: 10px;
+   overflow: hidden;
+}
+
+.skillCard:hover{
+    box-shadow: 2px 2px 10px rgb(87, 195, 219), 2px 2px 20px rgb(82, 205, 208);
+}
+
+.skillCard h1{
+    font-size: 2vmax;
+    text-align: center;
+    background: linear-gradient(to right, rgb(28, 206, 22), #e1d33a);
+    background-clip: text;
+    color: transparent;
+}   
+
+.hoverSkillCard img{
+    height: 80%;
+    filter: drop-shadow(2px 2px 10px black);
+    
+}
+
+.hoverSkillCard{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(121, 205, 220, 0.486), rgba(30, 28, 28, 0.407));
+    position: absolute;
+    bottom: 0;
+    backdrop-filter: blur(7px);
+    transform: translateY(100%);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillCard:hover .hoverSkillCard{
+    transform: translateY(0);
+}
+
+/* ! ============================================ CSS FOR DARK MODE ============================================ */
+.dark-theme{
+    --bg-color: #000;
+    --text-color: #fff;
+  
+}
+
+.light-theme{
+    --bg-color: #fff;    
+    --text-color: #000;
+}

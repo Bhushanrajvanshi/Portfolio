@@ -1,0 +1,39 @@
+#skills{
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.5s ease-in-out;
+}
+
+#skills h1{
+    font-size: 3vmax;
+    text-align: center;
+    margin-top: 15px;
+    background: linear-gradient(to right, #e1d33a, rgb(28, 206, 22));
+    background-clip: text;
+    color: transparent;
+}
+.skill-content {
+    width: 100%;
+    height: auto;
+    row-gap: none; 
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 750px) {
+    #skills{
+        height: auto;
+        row-gap: 15px;
+    }
+    #skills h1{
+        font-size: 4.1vmax;
+        margin: none;
+    } 
+}
